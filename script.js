@@ -5,10 +5,10 @@ console.clear();
 
 let newArray = [1, 2, 3, 4, 5];
 
-// Find > 2 value
+// Find all elemnets > 2 
 
-let result = newArray.some(function (val, index) {
+let result = newArray.every(function (val, index) {
     return val > 2
 })
 
-console.log(result); // true
+console.log(result); // false
