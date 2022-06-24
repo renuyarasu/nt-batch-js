@@ -1,9 +1,8 @@
 // Learn
 console.clear();
 
-// Array.concat()
+// Array.slice()
 
-let transport = ['🚐', '🚕', '🚋'];
-let modernTransport = ['🚐', '🚕', '🚋', '🚀'];
-let lastAddedTransport = transport.at(-1);
-let result = console.log(lastAddedTransport); // 
+let transport = ['🚕', '🚍', '🚋'];
+let noCarTransport = transport.slice(1)
+let result = console.log(noCarTransport); // 
