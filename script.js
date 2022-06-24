@@ -5,6 +5,10 @@ console.clear();
 
 let newArray = [1, 2, 3, 4, 5];
 
-let result = newArray.slice(1, 5);
+// Find > 2 value
 
-console.log(result);
+let result = newArray.filter(function (val, index) {
+    return val > 2
+})
+
+console.log(result); //[ 3, 4, 5 ]
