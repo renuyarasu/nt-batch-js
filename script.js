@@ -3,16 +3,16 @@ console.clear();
 
 // Array.Set()
 
-let myArray = [1, 2, 3, 4, 5];
-let mySet = new Set(myArray);
-mySet.add(2);
-mySet.delete(1);
-console.log(mySet);
+let data = ['name', 'VedaGna'];
+let myMap = new Map([data]);
 
-let h = mySet.has(2)
+myMap.set('age', 5);
 
-console.log(mySet);
+console.log(myMap); // { 'name' => 'VedaGna', 'age' => 5 }
 
-for (let i of mySet) {
-    console.log(i);
+for (let [key, value] of myMap) {
+    console.log(`Key ${key} and Value ${value}`);
 }
+
+/* Key name and Value VedaGna
+Key age and Value 5 */
