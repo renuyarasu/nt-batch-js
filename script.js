@@ -1,14 +1,8 @@
 // Learn
 console.clear();
 
-// Array
+// Array.concat()
 
-let newArray = [1, 2, 3, 4, 5];
-
-// Find all elemnets > 2 
-
-let result = newArray.every(function (val, index) {
-    return val > 2
-})
-
-console.log(result); // false
+let transport = ['🚐', '🚕', '🚋'];
+let modernTransport = transport.concat(['🚀']);
+let result = console.log(modernTransport); // [ '🚐', '🚕', '🚋', '🚀' ]
